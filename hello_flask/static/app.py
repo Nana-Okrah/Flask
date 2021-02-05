@@ -1,0 +1,18 @@
+from flask import Flask, render_template
+
+app = Flask(__name__, static_folder="static")
+
+@app.route('/')
+def index():
+    name = 'Nana'
+    description='This is my website!'
+    friends= ["bob", "Dom", "Tom", "Hank"]
+    return  render_template('index.html',greeting=name,description=description)
+
+@app.route('/about')
+def about():
+    return '<h1>About</h1><p>some other content</p>'
+
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0')

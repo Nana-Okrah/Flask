@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset = "UTF-8">
+<meta name="Veiwport" content="width =device-width, initial-scale=>
+<title> Home page</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<h1> Welcome, {{greeting}}</h1>
+<p>{{description}}</p>
+<hr>
+<h2>Friends</h2>
+ <ol>
+   {% for friend in friend %}
+   <li>{{friend}}</li>
+   <p>{{friend}}</p>
+</body>
+</html>
+
+
